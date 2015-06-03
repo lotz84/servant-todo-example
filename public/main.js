@@ -16,7 +16,7 @@ var updateTodoList = function(list){
                                .then(updateTodoList);
                            });
         var deleteButton = $("<button />")
-                           .text("削除")
+                           .text("Delete")
                            .on("click", function(e){
                                $.ajax({
                                    url:  "/todo/" + todo.id,

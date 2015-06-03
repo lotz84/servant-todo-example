@@ -102,6 +102,6 @@ indexHtml = do
             table_ [id_ "todo-list"] ""
             form_ [id_ "todo-form", method_ "POST", action_ "/todo"] $ do
                 input_ [type_ "text", name_ "title"]
-                input_ [type_ "submit", value_ "追加"]
+                input_ [type_ "submit", value_ "Add"]
             script_ [src_ "//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"] empty
             script_ [src_ "/public/main.js"] empty
