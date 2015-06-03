@@ -3,7 +3,7 @@ Servant Todo Example
 
 Todo web app example using [servant](https://hackage.haskell.org/package/servant)
 
-![](http://i.gyazo.com/94b8566d052eaeb5e17827ae2bc1dda9.png)
+![](http://i.gyazo.com/34857e26647291c283537f95fe137f48.png)
 
 ```bash
 $ cabal install --only-dependencies
