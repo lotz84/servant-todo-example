@@ -1,6 +1,8 @@
 Servant Todo Example
 ====================
 
+Todo web app example using [servant](https://hackage.haskell.org/package/servant)
+
 ![](http://i.gyazo.com/94b8566d052eaeb5e17827ae2bc1dda9.png)
 
 ```bash
