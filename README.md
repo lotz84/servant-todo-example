@@ -11,3 +11,19 @@ $ cabal run
 ```
 
 And access <http://localhost:3000> on web browser.
+
+##Type of API
+
+```haskell
+type TodoAPI = Get '[HTML] (Html ()) -- root
+          -- GET    /todo/all
+          :<|> "todo" :> "all" :> Get '[JSON] [Todo]
+          -- POST   /todo
+          :<|> "todo" :> ReqBody '[FormUrlEncoded] Todo :> Post '[JSON] [Todo]
+          -- PUT    /todo/:id
+          :<|> "todo" :> Capture "id" Int :> ReqBody '[JSON] Todo :> Put '[JSON] [Todo]
+          -- DELETE /todo/:id
+          :<|> "todo" :> Capture "id" Int :> Delete '[JSON] [Todo]
+          -- static files /public/*
+          :<|> "public" :> Raw
+```
